@@ -42,7 +42,7 @@ target_link_libraries(run_tests
     GTest::GTest
     GTest::Main
 )
-add_custom_target(test)
-add_dependencies(test run_tests)
+add_custom_target(testtarget)
+add_dependencies(testtarget run_tests)
 
 gtest_discover_tests(run_tests)
